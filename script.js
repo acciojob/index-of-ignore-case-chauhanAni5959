@@ -1,5 +1,10 @@
 function indexOfIgnoreCase(s1, s2) {
-  // write your code here
+  // Handle edge cases
+  if (s2 === "") return 0; 
+  if (s1 === "") return -1;
+
+  // Convert both to lowercase and find index
+  return s1.toLowerCase().indexOf(s2.toLowerCase());
 }
 
 // Please do not change the code below
